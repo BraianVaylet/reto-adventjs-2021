@@ -9,9 +9,11 @@ const ovejas = [
 
 function contarOvejas(ovejas) {
   return ovejas
-    .filter(oveja => oveja.color === 'rojo')
-    .filter(oveja => oveja.name.toLowerCase().includes('a'))
-    .filter(oveja => oveja.name.toLowerCase().includes('n'))  
+    .filter(oveja => 
+      oveja.color === 'rojo' &&
+      oveja.name.toLowerCase().includes('a') &&
+      oveja.name.toLowerCase().includes('n')
+    )  
 }
 
 const ovejasFiltradas = contarOvejas(ovejas)
